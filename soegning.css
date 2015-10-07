@@ -1,0 +1,129 @@
+
+.container-fluid:nth-of-type(2) {
+    margin-top: 0px;
+}
+
+h1 {
+	margin: 40px 0px; 
+	line-height: 1em;
+}
+h2 {
+	margin: 30px 0px 20px 0px; 
+	line-height: 1em; 
+}
+h4 {
+	margin: 0px 0px 20px 0px; 
+	line-height: 1em;
+}
+
+#questionCarousel{margin-top: 20px; }
+
+
+/*******************  QuizData3_exception is added for materialekendskab.html?file=3  ******************************/
+.QuizData3_exception{
+	border-radius: 8px;
+	background-color: #FFF;
+}
+.QuizData3_exception .carousel-indicators{
+	bottom: -5px;
+}
+.QuizData3_exception .carousel-indicators li{
+	border: 1px solid #000;
+}
+.QuizData3_exception .carousel-indicators .active{
+	background-color: #000;
+}
+.QuizData3_exception .left, .QuizData3_exception .right{
+	background-image: none;
+	color: #000;
+}
+.QuizData3_exception .carousel-control{
+	opacity: 0.7;
+}
+.QuizData3_exception .carousel-control:hover{
+	opacity: 1;
+}
+.QuizData3_exception .TextHolder{
+	margin-bottom: 20px;
+}
+/******************************************************************************************************************/
+
+
+.MsgBox_bgr{z-index: 20;}  /* Dette fixer problemet med at .carousel-indicators har z-index: 15 */
+
+
+.TextHolder{margin-left: auto; margin-right: auto; width: 80%; min-height: 200px;} 
+
+.indent{margin-left: 10px}
+
+.PointFeedback{margin-top: 10px;}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}
+
+.btnPressed{
+    background-color: #1da6db;
+    border: 1px solid #1da6db;
+    color: #fff;
+}
+
+.QuestionTask{
+	color: #000;
+}
+
+.checkAnswer {
+	background-color: #0dcea0;
+	color: #FFF;
+	border-style: none;
+}
+.checkAnswer:hover{
+	background-color: #0ddea0;
+	color: #FFF;
+	border-style: none;
+}
+
+/*
+.MarkedAnswer{
+	background-color: #1da6db;
+	color: #FFF;
+}
+*/
+
+.CorrectAnswer{
+	background-color: #0dcea0;
+	color: #FFF;
+}
+
+
+.WrongAnswer{
+	background-color: #ed3e3a;
+	color: #FFF;
+}
+
+.WrongAnswer_hover{
+	background-color: #000;
+	color: #FFF;
+}
+
+
+/*
+.checkAnswer {
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: auto;
+    padding: 5px;
+    right: 5%;
+    width: 100px;
+    background-color: #05a0a8;
+    border-color: #05a0a8;
+    color: #fff;
+}
+
+.checkAnswer:hover {
+	background-color: #047176;
+	border-color: #03676d;
+	color: #fff;
+}
+*/
