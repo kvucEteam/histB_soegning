@@ -100,6 +100,9 @@ function returnSearchInterface(jsonData){
 }
 
 
+function returnDatabaseDropdown(jsonData_dropdownObj){
+    return '<span class="DropdownObj">'+returnDropdownMarkup(jsonData_dropdownObj)+' <span class="ErrMsg"></span> </span> ';
+}
 
 
 
@@ -112,8 +115,21 @@ $(document).on('click', "#Search", function(event) {
     console.log("Search - Dropdown2: " + Dropdown2);
 
     var URL = 'http://www.google.dk/?#q=';
+
+    if (Dropdown1 !== jsonData.DropDowns[0].obj.options[0].value){
+        console.log("Search - TJEK 1 - ");
+        URL += '+site:'+Dropdown1;
+        // $("#Dropdown1").next().text("");
+        $("#Dropdown1").next().fadeOut("slow");
+    } else {
+        console.log("Search - TJEK 2 - ");
+        $("#Dropdown1").next().text("Vælg en database fra listen!").fadeIn("slow");
+        return 0;
+    }
+
+
     if (SearchText.length > 0){
-        URL += SearchText.replace(/\ +/g, "+");
+        URL += "+"+SearchText.replace(/\ +/g, "+");
         // $("#SearchText").next().text("");
         $("#SearchText").next().fadeOut("slow");
     } else {
@@ -123,24 +139,17 @@ $(document).on('click', "#Search", function(event) {
 
     console.log("jsonData.DropDowns[0].obj.options[0]: " + JSON.stringify( jsonData.DropDowns[0].obj.options[0].value ) );
 
-    if (Dropdown1 !== jsonData.DropDowns[0].obj.options[0].value){
-        URL += '+site:'+Dropdown1;
-        // $("#Dropdown1").next().text("");
-        $("#Dropdown1").next().fadeOut("slow");
-    } else {
-        $("#Dropdown1").next().text("Vælg en database fra listen!").fadeIn("slow");
-        return 0;
-    }
+    
 
-    if (Dropdown2 !== jsonData.DropDowns[1].obj.options[0].value){
-        if (Dropdown2 == jsonData.DropDowns[1].obj.options[2].value) URL += '&tbm=isch';  // Billed
-        if (Dropdown2 == jsonData.DropDowns[1].obj.options[3].value) URL += '&tbm=vid';   // Video
-        // $("#Dropdown2").next().text("");
-        $("#Dropdown2").next().fadeOut("slow");
-    } else {
-        $("#Dropdown2").next().text("Vælg en medietype fra listen!").fadeIn("slow");
-        return 0;
-    }
+    // if (Dropdown2 !== jsonData.DropDowns[1].obj.options[0].value){
+    //     if (Dropdown2 == jsonData.DropDowns[1].obj.options[2].value) URL += '&tbm=isch';  // Billed
+    //     if (Dropdown2 == jsonData.DropDowns[1].obj.options[3].value) URL += '&tbm=vid';   // Video
+    //     // $("#Dropdown2").next().text("");
+    //     $("#Dropdown2").next().fadeOut("slow");
+    // } else {
+    //     $("#Dropdown2").next().text("Vælg en medietype fra listen!").fadeIn("slow");
+    //     return 0;
+    // }
 
     console.log("Search - URL: " + URL);
 
@@ -162,17 +171,15 @@ $(document).ready(function() {
 
 	ReturnAjaxData("GET", "json/QuizData"+UlrVarObj.file+".json", false, "json");
 
-	
+    console.log(" jsonData.DropDowns[0].obj: " + JSON.stringify( jsonData.DropDowns[0].obj ) );
+	$("#DataInput").html(returnDatabaseDropdown(jsonData.DropDowns[0].obj));
 
-    $("#DataInput").html(returnSearchInterface(jsonData));  // Insert carousel HTML
+    // $("#DataInput").html(returnSearchInterface(jsonData));  // Insert carousel HTML
 
     console.log("jsonData: " + JSON.stringify(jsonData) );
 
-    $("#header").html(jsonData.userInterface.header);   // Shows the initial heading.
-    $("#subHeader").html(jsonData.userInterface.subHeader);    // Shows the initial subheading.
-
-    $(".btnContainer").hide();      // Hides all button containers.
-    $("#btnContainer_"+0).show();   // Shows the first button container.
+    // $("#header").html(jsonData.userInterface.header);   // Shows the initial heading.
+    // $("#subHeader").html(jsonData.userInterface.subHeader);    // Shows the initial subheading.
 
     // $(".QuestionCounter").text(correct_total+'/'+jsonData.length);   // Counts the initial number of correctly answered questions and total number questions and displays them.
 
@@ -184,5 +191,11 @@ $(document).ready(function() {
 
     // $("#id_description_iframe").contents().find("body").html()
 
+    // $("td.gsc-search-button input.gsc-search-button").addClass("btn btn-default");
 
+
+});
+
+$(window).load(function() {
+    $(".gsc-search-box input.gsc-search-button").addClass("btn btn-default");
 });

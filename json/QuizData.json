@@ -1,12 +1,12 @@
 { 
 	"userInterface" : { 
-		"header" : "Informationssøgning på google",
-		"subHeader" : "Du skal søge på følgende måde..."
+		"header" : "Ungdomsoprøret",
+		"subHeader" : "Kursist instruktion: du skal søge på følgende måde..."
 	},
 	"DropDowns" :  
 		[
 			{
-				"header": "Dropdown 1 headertext...", 
+				"header": "Hvor leder jeg bredt/dybt", 
 				"obj": {"id":"Dropdown1", "class":"Dropdown", "selected":"0", "options":[{"value":"Vælg database"},{"value":"danmarkshistorien.dk"},{"value":"faktalink.dk"},{"value":"videnskab.dk"}]}
 			},
 			{
