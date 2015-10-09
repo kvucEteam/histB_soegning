@@ -1,0 +1,20 @@
+{ 
+	"userInterface" : { 
+		"header" : "Informationssøgning",
+		"subHeader" : "Du skal søge på følgende måde... "
+	},
+	"DropDowns" : 
+		[
+			{
+				"header": "Dropdown 1 headertext...", 
+				"obj": {"id":"Dropdown1", "class":"Dropdown", "options":[{"id":"id1", "class":"class1", "value":"val 1"},{"id":"id2", "class":"class2", "value":"val 2"},{"id":"id3", "class":"class3", "value":"val 3"}]}
+			},
+			{
+				"header": "Dropdown 2 headertext...", 
+				"obj": {"id":"Dropdown2", "class":"Dropdown", "options":[{"id":"id1", "class":"class1", "value":"val 1"},{"id":"id2", "class":"class2", "value":"val 2"},{"id":"id3", "class":"class3", "value":"val 3"}]}
+			}
+		]
+}
+
+
+

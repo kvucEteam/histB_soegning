@@ -124,6 +124,22 @@ h4 {
 .checkAnswer:hover {
 	background-color: #047176;
 	border-color: #03676d;
-	color: #fff;
+	color: #fff; 
 }
 */
+
+
+/***********************************************/
+
+#SearchText{
+	margin-bottom: 10px;
+}
+
+.DropdownContainer{
+	margin-bottom: 10px;
+}
+
+.ErrMsg{
+	display: none;
+	color: #F00;
+}
