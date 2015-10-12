@@ -143,15 +143,3 @@ h4 {
 	display: none;
 	color: #F00;
 }
-
-.Theader{
-	margin-top: 10px;
-	margin-bottom: 5px;
-}
-
-.gsc-search-box input.gsc-search-button{
-	background-color: #05a0a8;
-    border-color: #05a0a8;
-    color: #fff;
-    height: 35px;
-}
