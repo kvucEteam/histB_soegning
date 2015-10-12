@@ -11,7 +11,7 @@
 			},
 			{
 				"header": "Dropdown 2 headertext...", 
-				"obj": {"id":"Dropdown2", "class":"Dropdown", "selected":"0", "options":[{"id":"id1", "class":"class1", "value":"vælg materialetype"},{"id":"id2", "class":"class2", "value":"Tekst"},{"id":"id2", "class":"class2", "value":"Billed"},{"id":"id3", "class":"class3", "value":"Video"}]}
+				"obj": {"id":"Dropdown2", "class":"Dropdown", "selected":"0", "options":[{"value":"vælg materialetype"},{"class":"btnPressed", "value":"Tekst"},{"value":"Billede"},{"value":"Video"}]}
 			}
 		]
 }

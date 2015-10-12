@@ -13,23 +13,59 @@
 	<body>
 		<div class="container-fluid">  
             <div class="col-xs-12">
-                <h1 id="header"></h1>
-                <h4 id="subHeader"></h4>
+                <h1 id="XXX_header">Søgning</h1>
+                <h4 id="XXX_subHeader" >Opgaveinstruktioner til kursisten: du skal...</h4>
 
+                    <h2>1. Mindmap til søgning</h2>
+                    <div class="mindmap"> <img class="img-responsive" src="img/mindmap_mockup.png" alt=""/> </div> 
+
+                    <h2>2. Find baggrundsmateriale </h2>
+                    <h4>Du skal starte med at lave en bred søgning.</h4>
+
+                    <script>
+                      (function() {
+                        var cx = '010570756016901960454:awrba6qqnss';
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                            '//cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                      })();
+                    </script>
+                    <gcse:search></gcse:search>
+                    
+<!-- 
                     <div id="DataInput">
                     </div>
-
-                    <div id="Search" class="btn btn-primary">Søg</div>
-<!-- 
-                <div class="PointFeedback">
-                    <h5>Korrekte svar: <span class="QuestionCounter QuestionTask">0/10</span> Fejl: <span class="ErrorCount QuestionTask">0</span> <a class="btn btn-default checkAnswer" href="#"> Tjek svar </a></h5>
-                </div>
--->
-
-<!-- 
-            <iframe id="id_description_iframe" src="http://www.google.dk"></iframe>
-            <div id="iframeoutput"></div>
  -->
+                    <h2>3. Find kildemateriale </h2>
+
+                    <h4>Du skal nu søge i dybden. Vælg mellem <span class="QuestionTask">datatyper</span> og <span class="QuestionTask">medietyper</span>: </h4>
+
+                    <!-- <h4>Vælg blandt nedenstående databaser</h4> -->
+
+                    <div id="Databases"> 
+                        <span class="ErrMsg"></span>
+                    </div>
+                  
+                    <div id="Media"> 
+                        <span class="ErrMsg"></span> 
+                    </div>
+                    <br/>
+
+                    <input id="SearchText" type="text" placeholder="Skriv dine søgeord her..." /> <span class="ErrMsg"></span>
+
+                    <br/><br/>
+
+                    <div id="Search" class="btn btn-primary">Søg på Google</div>
+<!-- 
+                    <p>(Foretag en dyb søgning med dine valg - Åbner i et nyt vindue)</p> 
+ --> 
+                    
+
+
             </div>
         </div>
 		<script src="../library/vendor_scripts.js"></script>
