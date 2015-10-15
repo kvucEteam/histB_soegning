@@ -1,20 +1,56 @@
-{ 
-	"userInterface" : { 
-		"header" : "Informationssøgning på google",
-		"subHeader" : "Du skal søge på følgende måde..."
-	},
-	"DropDowns" :  
-		[
-			{
-				"header": "Dropdown 1 headertext...", 
-				"obj": {"id":"Dropdown1", "class":"Dropdown", "selected":"0", "options":[{"value":"Vælg database"},{"value":"danmarkshistorien.dk"},{"value":"faktalink.dk"},{"value":"videnskab.dk"}]}
-			},
-			{
-				"header": "Dropdown 2 headertext...", 
-				"obj": {"id":"Dropdown2", "class":"Dropdown", "selected":"0", "options":[{"value":"vælg materialetype"},{"class":"btnPressed", "value":"Tekst"},{"value":"Billede"},{"value":"Video"}]}
-			}
-		]
+{
+    "userInterface": {
+        "header": "Informationssøgning på google",
+        "subHeader": "Du skal søge på følgende måde..."
+    },
+    "DropDowns": [{
+        "header": "Dropdown 1 headertext...",
+        "obj": {
+            "id": "Dropdown1",
+            "class": "Dropdown",
+            "selected": "0",
+            "options": [{
+                "value": "Vælg database"
+            }, {
+                "value": "danmarkshistorien.dk"
+            }, {
+                "value": "faktalink.dk"
+            }, {
+                "value": "videnskab.dk"
+            }, {
+                "value": "aargang.dk"
+            }, {
+                "value": "kvinfo.dk"
+            }, {
+                "value": "arbejdermuseet.dk"
+            }, {
+                "value": "gravsted.dk"
+            }, {
+                "value": "emu.dk"
+            }, {
+                "value": "arbejdermuseet.dk"
+            }, {
+                "value": "museernepaakanten.dk"
+            }, {
+                "value": "natmus.dk"
+            }]
+        }
+    }, {
+        "header": "Dropdown 2 headertext...",
+        "obj": {
+            "id": "Dropdown2",
+            "class": "Dropdown",
+            "selected": "0",
+            "options": [{
+                "value": "vælg materialetype"
+            }, {
+                "class": "btnPressed",
+                "value": "Tekst"
+            }, {
+                "value": "Billede"
+            }, {
+                "value": "Video"
+            }]
+        }
+    }]
 }
-
-
-

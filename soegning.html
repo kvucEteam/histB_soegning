@@ -1,95 +1,85 @@
 <!DOCTYPE html>
 <html>
-	<head> 
-		<title>Historie B - Soegning</title>
-		<!-- http://www.robotstxt.org/meta.html -->
-		<meta name="robots" content="noindex, nofollow" />
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="../library/css/styles.css" type="text/css" />
-	    <link rel="stylesheet" href="soegning.css" type="text/css" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	</head>
-	<body>
-		<div class="container-fluid">  
-            <div class="col-xs-12">
-                <h1 id="XXX_header">Søgning</h1>
-                <h4 id="XXX_subHeader" >Opgaveinstruktioner til kursisten: du skal...</h4>
 
-                    <h2>1. Mindmap til søgning</h2>
-                    <div class="mindmap"> <img class="img-responsive" src="img/mindmap_mockup.png" alt=""/> </div> 
+<head>
+    <title>Historie B - Soegning</title>
+    <!-- http://www.robotstxt.org/meta.html -->
+    <meta name="robots" content="noindex, nofollow" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../library/css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="soegning.css" type="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
 
-                    <h2>2. Find baggrundsmateriale </h2>
-                    <h4>Du skal starte med at lave en bred søgning.</h4>
-
-                    <script>
-                      (function() {
-                        var cx = '010570756016901960454:awrba6qqnss';
-                        var gcse = document.createElement('script');
-                        gcse.type = 'text/javascript';
-                        gcse.async = true;
-                        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                            '//cse.google.com/cse.js?cx=' + cx;
-                        var s = document.getElementsByTagName('script')[0];
-                        s.parentNode.insertBefore(gcse, s);
-                      })();
-                    </script>
-                    <gcse:search></gcse:search>
-                    
-<!-- 
+<body>
+    <div class="container-fluid">
+        <div class="col-xs-12">
+            <h1 id="XXX_header">Søgning</h1>
+            <h4 id="XXX_subHeader">Opgaveinstruktioner til kursisten: du skal...</h4>
+            <h2>1. Mindmap til søgning</h2>
+            <div class="mindmap"> <img class="img-responsive" src="img/mindmap_mockup.png" alt="" /> </div>
+            <h2>2. Find baggrundsmateriale </h2>
+            <h4>Du skal starte med at lave en bred søgning.</h4>
+            <script>
+            (function() {
+                var cx = '010570756016901960454:awrba6qqnss';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                    '//cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+            </script>
+            <gcse:search></gcse:search>
+            <!-- 
                     <div id="DataInput">
                     </div>
  -->
-                    <h2>3. Find kildemateriale </h2>
-
-                    <h4>Du skal nu søge i dybden. Vælg mellem <span class="QuestionTask">datatyper</span> og <span class="QuestionTask">medietyper</span>: </h4>
-
-                    <!-- <h4>Vælg blandt nedenstående databaser</h4> -->
-
-                    <div id="Databases"> 
-                        <span class="ErrMsg"></span>
-                    </div>
-                  
-                    <div id="Media"> 
-                        <span class="ErrMsg"></span> 
-                    </div>
-                    <br/>
-
-                    <input id="SearchText" type="text" placeholder="Skriv dine søgeord her..." /> <span class="ErrMsg"></span>
-
-                    <br/><br/>
-
-                    <div id="Search" class="btn btn-primary">Søg på Google</div>
-<!-- 
-                    <p>(Foretag en dyb søgning med dine valg - Åbner i et nyt vindue)</p> 
- --> 
-                    
-
-
+            <h2>3. Find kildemateriale </h2>
+            <h4>Du skal nu søge i dybden</h4>
+            <h4>Vælg en eller flere databaser:</h4>
+            <div id="Databases">
+                <span class="ErrMsg"></span>
             </div>
+            <br/>
+            <h4>Vælg om du vil se tekster, billeder eller video:</h4>
+            <div id="Media">
+                <span class="ErrMsg"></span>
+            </div>
+            <br/>
+            <input id="SearchText" type="text" placeholder="Skriv dine søgeord her..." /> <span class="ErrMsg"></span>
+            <br/>
+            <br/>
+            <div id="Search" class="btn btn-primary">Søg på Google</div>
+            <!-- 
+                    <p>(Foretag en dyb søgning med dine valg - Åbner i et nyt vindue)</p> 
+ -->
         </div>
-		<script src="../library/vendor_scripts.js"></script>
-        <script src="../library/custom_scripts.js"></script>       
-		<script src="soegning.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                one_line_footer();
-            });
-        </script>
-
-        <script>
-          // (function() {
-          //   var cx = '010570756016901960454:rk-h_cho7f0';
-          //   var gcse = document.createElement('script');
-          //   gcse.type = 'text/javascript';
-          //   gcse.async = true;
-          //   gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-          //       '//cse.google.com/cse.js?cx=' + cx;
-          //   var s = document.getElementsByTagName('script')[0];
-          //   s.parentNode.insertBefore(gcse, s);
-          // })();
-        </script>
-<!-- 
+    </div>
+    <script src="../library/vendor_scripts.js"></script>
+    <script src="../library/custom_scripts.js"></script>
+    <script src="soegning.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        one_line_footer();
+    });
+    </script>
+    <script>
+    // (function() {
+    //   var cx = '010570756016901960454:rk-h_cho7f0';
+    //   var gcse = document.createElement('script');
+    //   gcse.type = 'text/javascript';
+    //   gcse.async = true;
+    //   gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+    //       '//cse.google.com/cse.js?cx=' + cx;
+    //   var s = document.getElementsByTagName('script')[0];
+    //   s.parentNode.insertBefore(gcse, s);
+    // })();
+    </script>
+    <!-- 
         <script>
           (function() {
             var cx = '010570756016901960454:rk-h_cho7f0';
@@ -104,7 +94,7 @@
         </script>
         <gcse:search></gcse:search>
  -->
-<!-- 
+    <!-- 
         <script>
           (function() {
             var cx = '010570756016901960454:0an98cvlhge';
@@ -118,8 +108,8 @@
           })();
         </script>
         <gcse:search></gcse:search>
-  -->       
-<!-- 
+  -->
+    <!-- 
         <script>
             
 
@@ -145,6 +135,7 @@
 
         </script>
         <gcse:search></gcse:search>
-  -->       
-	</body>
+  -->
+</body>
+
 </html>

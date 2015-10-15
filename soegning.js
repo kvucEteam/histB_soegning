@@ -171,8 +171,8 @@ $(document).on('click', "#Search", function(event) {
 
     console.log("Search - URL: " + URL);
 
-
-    window.location.href = URL;
+    window.open(URL,'_blank');
+    //window.location.href = URL;
 
 
     // window.location.href = 'https://www.google.dk?q=test';
