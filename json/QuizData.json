@@ -10,7 +10,7 @@
             "class": "Dropdown",
             "selected": "0",
             "options": [{
-                "value": "Vælg database"
+                "value": "Vælg databaser"
             }, {
                 "value": "danmarkshistorien.dk"
             }, {
@@ -45,7 +45,7 @@
                 "value": "vælg materialetype"
             }, {
                 "class": "btnPressed",
-                "value": "Tekst"
+                "value": "Almindelig søgning"
             }, {
                 "value": "Billede"
             }, {
