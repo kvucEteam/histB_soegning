@@ -198,7 +198,7 @@ $(document).on('click', "#Search", function(event) {
 
 
 $(document).ready(function() {
-    alert(window.location.href[window.location.href.length - 6]);
+  
     modal();
 
     if (window.location.href[window.location.href.length - 6] == 2) {
