@@ -56,3 +56,18 @@ h4 {
 
 .mindmap{
 }
+
+.modal-dialog {
+  width: 90%;
+  height: 100%;
+  padding: 0;
+}
+
+.modal-content {
+  
+  border-radius: 0;
+}
+
+img{
+	width:100%;
+}
