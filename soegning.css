@@ -55,6 +55,7 @@ h4 {
 }
 
 .mindmap{
+	cursor: pointer;
 }
 
 .modal-dialog {
