@@ -2,6 +2,7 @@ var jsonData = "<h1>OK</h1>";
 var CurrentQuestionId = 0;
 var correct_total = 0;
 var error_total = 0;
+var SearchPlaceholderMemory;
 // var CssObj = {};
 
 
@@ -173,12 +174,22 @@ $(document).on('click', "#Search", function(event) {
     //     return 0;
     // }
 
+
+    if (typeof(SearchPlaceholderMemory) === "undefined"){  // Save the placeholder text from the HTML form.
+        SearchPlaceholderMemory = $("#SearchText").attr("placeholder");
+    }
+    
+
     if (SearchText.length > 0) {
         URL += "+" + SearchText.replace(/\ +/g, "+");
         // $("#SearchText").next().text("");
-        $("#SearchText").next().fadeOut("slow");
+        $("#SearchTextParent").removeClass("ErrorColor");  // NEW
+        $("#SearchText").attr("placeholder", SearchPlaceholderMemory);  // Inset old placeholder text again.
+        $("#SearchText").next().fadeOut("slow");  // OLD
     } else {
-        $("#SearchText").next().text("Skriv nogle søgeord her!").fadeIn("slow");
+        // $("#SearchText").next().text("Skriv nogle søgeord her!").fadeIn("slow");  // OLD
+        $("#SearchTextParent").addClass("ErrorColor");   // NEW
+        $("#SearchText").attr("placeholder","Skriv nogle søgeord her!").fadeIn("slow");  // NEW
         return 0;
     }
 
