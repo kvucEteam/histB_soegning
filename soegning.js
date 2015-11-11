@@ -160,9 +160,11 @@ $(document).on('click', "#Search", function(event) {
     if (Databases.length > 0) {
         URL += Databases;
         // $("#Dropdown1").next().text("");
-        $("#Databases .ErrMsg").fadeOut("slow");
+        // $("#Databases .ErrMsg").fadeOut("slow"); // OLD
+        $("#DataBaseHeading").removeClass("ErrorColorHeading");
     } else {
-        $("#Databases .ErrMsg").text("Vælg en database!").fadeIn("slow");
+        // $("#Databases .ErrMsg").text("Vælg en database!").fadeIn("slow");  // OLD
+        $("#DataBaseHeading").addClass("ErrorColorHeading");
         return 0;
     }
 
@@ -175,21 +177,20 @@ $(document).on('click', "#Search", function(event) {
     // }
 
 
-    if (typeof(SearchPlaceholderMemory) === "undefined"){  // Save the placeholder text from the HTML form.
-        SearchPlaceholderMemory = $("#SearchText").attr("placeholder");
-    }
+    // if (typeof(SearchPlaceholderMemory) === "undefined"){  // Save the placeholder text from the HTML form.
+    //     SearchPlaceholderMemory = $("#SearchText").attr("placeholder");
+    // }
     
 
     if (SearchText.length > 0) {
         URL += "+" + SearchText.replace(/\ +/g, "+");
-        // $("#SearchText").next().text("");
         $("#SearchTextParent").removeClass("ErrorColor");  // NEW
-        $("#SearchText").attr("placeholder", SearchPlaceholderMemory);  // Inset old placeholder text again.
-        $("#SearchText").next().fadeOut("slow");  // OLD
+        // $("#SearchText").attr("placeholder", SearchPlaceholderMemory);  // Inset old placeholder text again.
+        // $("#SearchText").next().fadeOut("slow");  // OLD
     } else {
         // $("#SearchText").next().text("Skriv nogle søgeord her!").fadeIn("slow");  // OLD
         $("#SearchTextParent").addClass("ErrorColor");   // NEW
-        $("#SearchText").attr("placeholder","Skriv nogle søgeord her!").fadeIn("slow");  // NEW
+        // $("#SearchText").attr("placeholder","Skriv nogle søgeord her!").fadeIn("slow");  // NEW
         return 0;
     }
 

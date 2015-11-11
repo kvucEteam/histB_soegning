@@ -62,9 +62,12 @@ h4 {
 }
 
 
-
-
 /***********************************************/
+
+.ErrorColorHeading{
+	color: #ed3e3a; 
+}
+
 
 #SearchText{
 	margin-bottom: 10px;
