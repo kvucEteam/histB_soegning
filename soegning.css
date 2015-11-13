@@ -39,6 +39,35 @@ h4 {
 
 
 /***********************************************/
+/*
+	Således sættes farve på placeholders:
+	https://css-tricks.com/snippets/css/style-placeholder-text/
+*/
+
+
+.ErrorColor ::-webkit-input-placeholder {
+   color: #ed3e3a;
+}
+
+.ErrorColor :-moz-placeholder { /* Firefox 18- */
+   color: #ed3e3a;  
+}
+
+.ErrorColor ::-moz-placeholder {  /* Firefox 19+ */
+   color: #ed3e3a; 
+}
+
+.ErrorColor :-ms-input-placeholder {  
+   color: #ed3e3a;  
+}
+
+
+/***********************************************/
+
+.ErrorColorHeading{
+	color: #ed3e3a; 
+}
+
 
 #SearchText{
 	margin-bottom: 10px;
@@ -55,6 +84,7 @@ h4 {
 }
 
 .mindmap{
+	cursor: pointer;
 }
 
 .modal-dialog {

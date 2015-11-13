@@ -41,7 +41,7 @@
  -->
             <h2>3. Find kildemateriale </h2>
             <h4>Til sidst søger du i dybden for at finde specifikke kilder til emnet.</h4>
-            <h4>Vælg en eller flere databaser herunder</h4>
+            <h4 id="DataBaseHeading">Vælg en eller flere databaser herunder</h4>
             <div id="Databases">
                 <span class="ErrMsg"></span>
             </div>
@@ -52,7 +52,9 @@
             </div>
             <br/>
             <h4>Skriv dine søgeord her</h4>
-            <input id="SearchText" type="text" placeholder="Skriv dine søgeord her..." /> <span class="ErrMsg"></span>
+            <div id="SearchTextParent">
+                <input id="SearchText" type="text" placeholder="Skriv dine søgeord her..." /> <span class="ErrMsg"></span>
+            </div>
             <br/>
             <br/>
             <h4>Når du klikker på knappen, bliver du sendt til en googleside med resultaterne fra de valgte databaser</h4>
@@ -72,75 +74,7 @@
         one_line_footer();
     });
     </script>
-    <script>
-    // (function() {
-    //   var cx = '010570756016901960454:rk-h_cho7f0';
-    //   var gcse = document.createElement('script');
-    //   gcse.type = 'text/javascript';
-    //   gcse.async = true;
-    //   gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-    //       '//cse.google.com/cse.js?cx=' + cx;
-    //   var s = document.getElementsByTagName('script')[0];
-    //   s.parentNode.insertBefore(gcse, s);
-    // })();
-    </script>
-    <!-- 
-        <script>
-          (function() {
-            var cx = '010570756016901960454:rk-h_cho7f0';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                '//cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-          })();
-        </script>
-        <gcse:search></gcse:search>
- -->
-    <!-- 
-        <script>
-          (function() {
-            var cx = '010570756016901960454:0an98cvlhge';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                '//cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-          })();
-        </script>
-        <gcse:search></gcse:search>
-  -->
-    <!-- 
-        <script>
-            
-
-            var cx1 = '010570756016901960454:0an98cvlhge';
-
-            var cx2 = '010570756016901960454:rk-h_cho7f0';
-
-            function CSE(cx) {
-            // var cx = '010570756016901960454:0an98cvlhge';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                '//cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-            s.prepend()
-            };
-
-            CSE(cx1);
-
-            CSE(cx2);
-
-        </script>
-        <gcse:search></gcse:search>
-  -->
+    
 </body>
 
 </html>
